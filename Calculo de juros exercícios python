@@ -1,0 +1,9 @@
+deposito = 0
+juros = 1
+while  juros <= 2:
+	x = int(input(" deposito inicial %d numero" % juros))
+	x2 = float(input("a taxa de juros e %d" % juros))
+	juros_periodo= (x * x2 )/ 100
+	deposito += juros_periodo
+	juros += 1
+print("o total que ganho de juros e %.2f" % deposito)
