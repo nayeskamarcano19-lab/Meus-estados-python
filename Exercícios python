@@ -1,0 +1,27 @@
+kwh = int(input("Quantidade de kWh consumida: "))
+instalacao = input("Tipo de instalação (R, I, C): ").upper()
+
+if instalacao == "R":
+    if kwh <= 500:
+        operacao = kwh * 0.40
+    else:
+        operacao = kwh * 0.65
+
+elif instalacao == "I":
+    if kwh <= 1000:
+        operacao = kwh * 0.55
+    else:
+        operacao = kwh * 0.60
+
+elif instalacao == "C":
+    if kwh <= 5000:
+        operacao = kwh * 0.55
+    else:
+        operacao = kwh * 0.60
+
+else:
+    operacao = None
+    print("Tipo de instalação inválido")
+
+if operacao is not None:
+    print("Seu preço a pagar é de: R$ %.2f" % operacao)
