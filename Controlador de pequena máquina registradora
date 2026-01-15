@@ -1,0 +1,23 @@
+while True:
+    codigo = int(input("Digite o codigo do produto: "))
+    quantidade = int(input("Digite a quantidade comprada: "))
+
+    if quantidade == 0:
+        print("Programa encerrado")
+        break
+
+    if quantidade == 1:
+        resultado = quantidade * 0.50
+    elif quantidade == 2:
+        resultado = quantidade * 1.00
+    elif quantidade == 3:
+        resultado = quantidade * 4.00
+    elif quantidade == 5:
+        resultado = quantidade * 7.00
+    elif quantidade == 9:
+        resultado = quantidade * 8.00
+    else:
+        print("Código ou quantidade inválida")
+        
+
+    print("Seu total de compras é R$ %.2f" % resultado)
