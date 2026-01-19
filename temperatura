@@ -1,0 +1,15 @@
+"""imprima a menor e a maior temperatura assim como a temperatura media"""
+t=[-10, -8, 0, 1, 2, -2, -4]
+máximo=t[0]
+menor=t[0]
+soma = 0
+for e in t:
+    if e > máximo:
+        máximo = e
+    if e < menor:
+        menor = e
+    soma +=e
+media = soma/len(t)
+print(f"a temperatura maxima e de {máximo}")
+print(f"a temperatura menor e de {menor}")
+print(f"a temperatura media e {media}")
